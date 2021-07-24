@@ -149,7 +149,7 @@ h6 {
   display: block;
 }
 
-.header__nav .header__subnav li:hover a {
+.header__nav .header__subnav > li:hover > a {
   background-color: #ccc;
   color: #000;
   display: block;
@@ -404,7 +404,7 @@ h6 {
 .footer__item i {
   color: #000;
   font-size: 20px;
-  margin-right: 2px;
+  margin-right: 6px;
 }
 
 .footer__item:hover {

@@ -40,7 +40,7 @@
                 display: block;
             }
         }
-        .header__subnav li:hover a {
+        .header__subnav>li:hover>a {
             background-color: #ccc;
             color: #000;
             display: block;

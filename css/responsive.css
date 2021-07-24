@@ -1,11 +1,12 @@
 /* pc */
 @media (min-width : 1024px){
 }
-/* mobile */
+/* tablet */
 @media (min-width: 740px) and (max-width : 1023px){
 }
 /* mobile */
 @media (max-width : 739px){
+    /* begin css header */
     .header{
         overflow: hidden;
     }
@@ -23,10 +24,47 @@
         display: block;
         padding: 0px 24px;
     }
+    #subnav{
+        background-color: #333;
+    }
+    #subnav > li > a{
+        color: #fff;
+        padding: 0 32px;
+
+    }
     .header__search--btn{
         display: none;
     }
     .header__more--btn{
         display: block;
     }
+    /* end css header */
+    /* begin css slide */
+    .slider__content{
+        display: none;
+    }
+    /* end css slide */
+
+    /* begin css band */
+    .band__member{
+        flex-direction: column;
+    }
+    /* end css band */
+    /* begin css tour */
+    .tour__shows{
+        flex-direction: column;
+    }
+    .tour__shows--item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    /* end css tour */
+    /* begin css contact */
+    .contact__form{
+        margin-top: 16px;
+    }
+    .contact__form--group{
+        display: block;
+    }
+    /* end css contact */
 }
