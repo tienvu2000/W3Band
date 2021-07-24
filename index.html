@@ -3,60 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-    <title></title>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title> The band </title>
 </head>
 <body>
-    <div id="main">
-        <div id="header">
+    <header id="header" class="header">
+        <div class="header__menu">
             <!-- Begin nav -->
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">
+            <ul id="nav" class="header__nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">
                             More
                             <i class="arrow_down ti-angle-down"></i>
                     </a>
-                    <ul class="sub_nav">
-                       <li><a href="">Merchandise</a></li>
-                       <li><a href="">Extras</a></li>
-                       <li><a href="">Media</a></li>
-                   </ul>
+                    <ul id="subnav" class="header__subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
                 </li>
             </ul>
-            <!-- end nav -->
             <!-- begin Search -->
-            <!-- <div class="search-btn ti-search">
-
-            </div> -->
+            <div class="header__search--btn">
+                <a href="#" class="ti-search"></a>       
+            </div>
             <!-- end Search -->
-
-        </div>
-
-        <div id="slide">
-            <div class="text_content">
-                <h2 class="main_text">Los Angeles</h2>
-                <p class="sub_text">We had the best time playing at Venice Beach!</p>
+            <!-- begin btn-more-menu -->
+            <div id="mobile__more--btn" class="header__more--btn">
+                <i class="ti-menu"></i>
             </div>
-
+            <!-- end btn-more -->
         </div>
+            <!-- end nav -->
 
-        <div id="container">
-            <div id="content">
-
+    </header>
+    <div id="main">
+        <!-- begin slider -->
+        <div class="slider">
+            <div class="slider__img">
+                <img src="./assets/img/imgslide.jpg" alt="" class="slider__img--los">
+            </div>
+            <div class="slider__content">
+                <h3 class="slider__maintext">Los Angeles</h3>
+                <p class="slider__subtext">We had the best time playing at Venice Beach!</p>
+            </div>
+        <!-- end slider -->
+        </div>
+        <div id="band" class="band">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">The band</h2>
+                    <p class="sub__title">We love music</p>
+                    <p class="band__desc">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="band__member">
+                        <div class="band__member--item">
+                            <p class="band__member--name">Name</p>
+                            <div class="band__member--pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                            </div>
+                        </div>
+                        <div class="band__member--item">
+                            <p class="band__member--name">Name</p>
+                            <div class="band__member--pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                            </div>
+                        </div>
+                        <div class="band__member--item">
+                            <p class="band__member--name">Name</p>
+                            <div class="band__member--pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="footer">
-
+        <div  id="tour" class="tour">
+            <!-- begin tour -->
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">TOUR DATES
+                    </h2>
+                    <p class="sub__title">
+                        Remember to book your tickets!
+                    </p>
+                </div>
+                <div class="tour__date">
+                    <div class="tour__dates">
+                        <div class="tour__dates--month">September <span class="tour__date--tksoldout">Sold out</span>
+                        </div>
+                    </div>
+                    <div class="tour__dates">
+                        <div class="tour__dates--month">October  <span class="tour__date--tksoldout">Sold out</span>
+                        </div>
+                    </div>
+                    <div class="tour__dates">
+                        <div class="tour__dates--month">November <span class="tour__date--tkstill">3</span>
+                        </div>  
+                    </div>
+                </div>
+                <div class="tour__shows">
+                    <div class="tour__shows--item">
+                        <div>
+                            <img src="./assets/img/newyork.jpg" alt="" class="tour__shows--img">
+                        </div>
+                        <div class="tour__shows--content">
+                            <h4 class="tour__shows--title">New York
+                            </h4>
+                            <p class="tour__shows--dates">
+                                Fri 27 Nov 2016
+                            </p>
+                            <div class="tour__shows--subtitle">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="tour__shows--item">
+                        <div>
+                            <img src="./assets/img/paris.jpg" alt="" class="tour__shows--img">
+                        </div>
+                        <div class="tour__shows--content">
+                            <h4 class="tour__shows--title">Paris
+                            </h4>
+                            <p class="tour__shows--dates">
+                                Sat 28 Nov 2016
+                            </p>
+                            <div class="tour__shows--subtitle">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="tour__shows--item">
+                        <div>
+                            <img src="./assets/img/sanfran.jpg" alt="" class="tour__shows--img">
+                        </div>
+                        <div class="tour__shows--content">
+                            <h4 class="tour__shows--title">San Francisco
+                            </h4>
+                            <p class="tour__shows--dates">
+                                Sun 29 Nov 2016
+                            </p>
+                            <div class="tour__shows--subtitle">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">
+                        CONTACT
+                    </h2>
+                    <p class="sub__title">
+                        Fan? Drop a note!
+                    </p>
+                </div>
+                <div class="contact__body">
+                    <div class="contact__info">
+                        <div class="contact__address">
+                            <i class="ti-location-pin"></i>
+                            Ứng Hòa, Hà Nội
+                        </div>
+                        <div class="contact__phone--number">
+                            <i class="ti-mobile"></i>
+                            Phone : 096 174 3857
+                        </div>
+                        <div class="contact__email--address">
+                            <i class="ti-email"></i>
+                            Email : tienxmin0123@gmail.com
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="contact__form">
+                            <div class="contact__form--group">
+                                <input type="text" name="" id="" placeholder="Name" required class="contact__form--control contact__form--name">
+                                <input type="email" name="" id="" placeholder="Email" required  class="contact__form--control">     
+                            </div>
+                            <div class="contact__form--mess">
+                                <input type="text" name="" id="" placeholder="Message" required  class="contact__form--control">
+                            </div>
+                            <div class="contact__btn">
+                                <input type="submit" value="Send" class="contact__btn--submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/map.jpg" alt="" class="contact__map">
+            </div>
+        </div>
+    <footer class="footer content">
+        <div class="footer__content">
+            <div class="footer__social">
+                <a href="#" class="footer__item"><i class="ti-facebook"></i></a>
+                <a href="#" class="footer__item"><i class="ti-instagram"></i></a>
+                <a href="#" class="footer__item"><i class="ti-google"></i></a>
+                <a href="#" class="footer__item"><i class="ti-pinterest"></i></a>
+                <a href="#" class="footer__item"><i class="ti-twitter"></i></a>
+                <a href="#" class="footer__item"><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="footer__desc">Powered by <a href="#">w3.css</a></p>
         </div>
 
-    </div>
-    
+    </footer>
+    <script>
+        // open/close menu
+        var header = document.getElementById('header');
+        var mobileBtn = document.getElementById('mobile__more--btn');
+        var headerHeight = header.clientHeight;
+        mobileBtn.onclick = function(){
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        // open/close sub menu
+        // var headerSubNav = document.getElementById('subnav');
+        // headerSubNav.onclick = function(){
+        //     var isCloseSubNav = header.clientHeight === headerHeight;
+        //     if (isCloseSubNav){
+        //         header.style.height = 'auto';
+        //     }
+        //     else{
+        //         header.style.height = null;
+        //     }
+        // }
+
+
+        // auto close menu is onclick
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for ( var i = 0; i<menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header__subnav');
+                if(!isParentMenu){
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
 

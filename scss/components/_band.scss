@@ -1,0 +1,27 @@
+.band{
+    .content{
+        .band__desc{
+            padding: 15px 0;
+            text-align: justify;
+        }
+    }
+    &__member{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__member--item{
+        margin-top: 35px;
+        text-align: center;
+    }
+    &__member--name{
+        padding: 15px 0;
+    }
+    &__member--pic{
+
+    }
+    &__member--img{
+        width: 60%;
+        height: auto;
+        border-radius: 4px;
+    }
+}

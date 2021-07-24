@@ -1,0 +1,71 @@
+.tour{
+   background-color: #000; 
+   color: #fff;
+   &__date{
+       margin-top: 25px;
+       background-color: #fff;
+       color: #000;
+   }
+   &__dates{
+       border-bottom: 1px solid #ccc;
+       padding: 8px 16px;
+   }
+   &__date--tksoldout{
+       background-color: #F44336;
+       color: #fff;
+       padding: 3px 7px;
+       margin-left: 16px;
+   }
+   &__date--tkstill{
+    padding: 0px 8px;
+    background: #000;
+    color: #fff;
+    border-radius: 50px;
+    float: right;
+   }
+   &__shows{
+       margin-top: 32px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    &__shows--item{
+        width: 32%;
+        background:#fff;
+        color: #000;
+   }
+   &__shows--img{
+       width: 100%;
+       height: auto;
+       &:hover{
+            opacity: 0.6;
+       }
+    }
+    &__shows--content{
+        padding:8px 16px;
+        margin-bottom: 7px;
+    }
+    &__shows--title{
+        padding-bottom: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    &__shows--dates{
+        opacity: 0.8;
+        padding-bottom: 15px;
+    }
+    &__shows--subtitle{
+        margin-bottom:  15px;
+    }
+    &__shows--btn{
+        padding: 11px 16px;
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        &:hover{
+            background-color: #ccc;
+            color: #000;
+        }
+    }
+
+}

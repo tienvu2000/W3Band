@@ -1,0 +1,32 @@
+/* pc */
+@media (min-width : 1024px){
+}
+/* mobile */
+@media (min-width: 740px) and (max-width : 1023px){
+}
+/* mobile */
+@media (max-width : 739px){
+    .header{
+        overflow: hidden;
+    }
+    .header__menu{
+        display: block;
+    }
+    .header__nav{
+        flex-direction: column;
+        display: block;
+    }
+    .header__nav>li:first-child{
+        display: inline-block;
+    }
+    .header__nav li a{
+        display: block;
+        padding: 0px 24px;
+    }
+    .header__search--btn{
+        display: none;
+    }
+    .header__more--btn{
+        display: block;
+    }
+}
