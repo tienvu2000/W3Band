@@ -127,7 +127,7 @@
                             <div class="tour__shows--subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="tour__shows--item">
@@ -143,7 +143,7 @@
                             <div class="tour__shows--subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="tour__shows--item">
@@ -159,7 +159,7 @@
                             <div class="tour__shows--subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <a href="" class="tour__shows--btn">Buy Tickets</a>
+                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -210,6 +210,7 @@
                 <img src="./assets/img/map.jpg" alt="" class="contact__map">
             </div>
         </div>
+    </div>
     <footer class="footer content">
         <div class="footer__content">
             <div class="footer__social">
@@ -224,6 +225,53 @@
         </div>
 
     </footer>
+    <div class="modal js__modal">
+        <div class="modal__container js__modal__container">
+            <header class="modal__header">
+                <h1 class="modal__header--title">
+                    <i class="ti-bag"></i>
+                    Tickets
+                </h1>
+                <div class="modal__close js__modal__close">
+                    <i class="ti-close"></i>
+                </div>
+            </header>
+            <body>
+                <div class="modal__body">
+                    <form action="#">
+                        <div class="modal__quantity--tickets">
+                            <label for="quantity--tickets" class="modal__form--quantity" >
+                                <i class="ti-shopping-cart"></i>
+                                Tickets, $15 per person
+                            </label>
+                            <input  id="quantity--tickets" type="text" class="modal__form--input" required placeholder="How many?">
+                        </div>
+                        <div class="modal__email--address">
+                            <label for="email" class="modal__form--email">
+                                <i class="ti-user"></i>
+                                Send To
+                            </label>
+                            <input id="email" type="text" class="modal__form--input" required placeholder="Enter email">
+                        </div>
+                        <button class="modal__btn" >
+                            Pay
+                            <i class="ti-check"></i>
+                        </button>
+                    </form>
+                </div>
+            </body>
+            <footer class="modal--foter">
+
+                <div class="modal__help">
+                    <p class="modal__need--help"></p>
+                    Need
+                        <a href="" class="modal__help--user">
+                            helps?
+                        </a>
+                </div>
+            </footer>
+        </div>
+    </div>
     <script>
         // open/close menu
         var header = document.getElementById('header');
@@ -238,19 +286,6 @@
                 header.style.height = null;
             }
         }
-        // open/close sub menu
-        // var headerSubNav = document.getElementById('subnav');
-        // headerSubNav.onclick = function(){
-        //     var isCloseSubNav = header.clientHeight === headerHeight;
-        //     if (isCloseSubNav){
-        //         header.style.height = 'auto';
-        //     }
-        //     else{
-        //         header.style.height = null;
-        //     }
-        // }
-
-
         // auto close menu is onclick
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for ( var i = 0; i<menuItems.length; i++){
@@ -262,6 +297,31 @@
                 }
             }
         }
+    </script>
+    <script>
+        const buyBtns = document.querySelectorAll('.js__buy--tickets');
+        const modal = document.querySelector('.js__modal')
+        const modalClose = document.querySelector('.js__modal__close')
+        const modalContainer = document.querySelector('.js__modal__container')
+        // add class open
+        function showBuyTickets(){
+            modal.classList.add('modal__open')
+        }
+        // remove class open
+        function hideBuyTickets(){
+            modal.classList.remove('modal__open')
+        }
+        // lặp từng thẻ button và lắng nghe hành vi click
+        for (const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+        // nghe hành vi click vào button close
+        modalClose.addEventListener('click', hideBuyTickets)
+        // click ra ngoài vẫn thực hiện hành vi đóng buy tickets
+        modal.addEventListener('click', hideBuyTickets)
+        modalContainer.addEventListener('click' , function (event){
+        event.stopPropagation()
+        })
     </script>
 </body>
 </html>

@@ -385,6 +385,8 @@ h6 {
   background-color: #000;
   color: #fff;
   display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
 .tour__shows--btn:hover {
@@ -420,5 +422,154 @@ h6 {
 .footer__desc a {
   color: #000;
   text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.modal__open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__container {
+  background: #fff;
+  width: 900px;
+  height: auto;
+  max-width: calc( 100% - 48px);
+  -webkit-animation: modalFadeIn ease 0.475s;
+          animation: modalFadeIn ease 0.475s;
+}
+
+.modal__header {
+  position: relative;
+  background: #009688;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.modal__header i {
+  font-size: 3rem;
+  margin-right: 16px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 15px;
+}
+
+.modal__close i {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.modal__close:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.modal__body {
+  padding: 32px 16px;
+}
+
+.modal__quantity--tickets, .modal__email--address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.modal__form--quantity, .modal__form--email {
+  margin-bottom: 8px;
+}
+
+.modal__form--input {
+  padding: 15px;
+}
+
+.modal__btn {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: #009688;
+  cursor: pointer;
+  margin-top: 16px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.modal__btn i {
+  font-size: 2rem;
+}
+
+.modal__btn:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.modal__help {
+  float: right;
+  padding: 16px;
+}
+
+.modal__help--user {
+  text-decoration: underline;
+  color: #2196F3;
+}
+
+@-webkit-keyframes modalFadeIn {
+  from {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
