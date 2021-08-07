@@ -1,0 +1,100 @@
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    justify-content:center;
+    align-items: center;
+    display: none;
+    &__open{
+        display: flex;
+    }
+    &__container{
+        background: #fff;
+        width: 900px;
+        height: auto;
+        max-width: calc( 100% - 48px);
+        animation: modalFadeIn ease 0.475s;
+    }
+    &__header{
+        position: relative;
+        background: #009688;
+        color: #fff;
+        display: flex;
+        // text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        i{
+            font-size: 3rem;
+            margin-right: 16px;
+        }
+    }
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 15px;
+        i{
+            margin: 0;
+            font-size: 2.4rem;
+        }
+        &:hover{
+            background: #ccc;
+            color: #000;
+        }
+    }
+    &__body{
+        padding: 32px 16px;
+    }
+    &__quantity--tickets,&__email--address{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    &__form--quantity,&__form--email{
+        margin-bottom: 8px;
+    }
+    &__form--input{
+        padding: 15px;
+    }
+    &__btn{
+        padding: 15px;
+        width: 100%;
+        border: none;
+        background-color:#009688;
+        cursor: pointer;
+        margin-top: 16px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        i{
+            font-size: 2rem;
+        }
+        &:hover{
+            background: #ccc;
+            color: #000;
+        }
+    }
+    &__help{
+        float:right;
+        padding: 16px;   
+    }
+    &__help--user{
+        text-decoration: underline;
+        color: #2196F3;
+    }
+    @keyframes modalFadeIn{
+        from{
+            transform: translateY(-160px);
+            opacity: 0.5;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
