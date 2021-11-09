@@ -1,0 +1,28 @@
+.footer{
+    width: 100%;
+    min-height: 216px;
+    &__content{
+        padding: 64px 0;
+    }
+    &__social{
+    }
+    &__item{
+        i{
+            color: #000;
+            font-size: 20px;
+            margin-right: 6px;
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    &__desc{
+        color: #000;
+        opacity: 0.6;
+        padding: $padding;
+        a{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}

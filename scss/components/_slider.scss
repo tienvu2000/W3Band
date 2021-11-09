@@ -1,0 +1,25 @@
+.slider{
+    &__item{
+        position: relative;
+    }
+    &__img-los{
+        width: 100%;
+        height: auto;
+    }
+    &__content{
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    &__maintext{
+        // margin: 10px 0;
+    }
+    &__subtext{
+        margin: 25px 0;
+    }
+}
+.slick-arrow{
+    display: none !important;
+}
