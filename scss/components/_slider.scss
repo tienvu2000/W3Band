@@ -1,6 +1,8 @@
 .slider{
-    position: relative;
-    &__img--los{
+    &__item{
+        position: relative;
+    }
+    &__img-los{
         width: 100%;
         height: auto;
     }
@@ -17,4 +19,7 @@
     &__subtext{
         margin: 25px 0;
     }
+}
+.slick-arrow{
+    display: none !important;
 }

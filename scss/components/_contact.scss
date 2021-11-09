@@ -13,30 +13,30 @@
         width: 30px;
         display: inline-block;
     }
-    &__address,&__phone--number,&__email--address{
+    &__address,&__phone-number,&__email-address{
         font-size: 18px;
     }
     %__form{
         max-width: 384px;
     }
-    &__form--group{
+    &__form-group{
         display: inline-flex;
     }
-    &__form--control{
+    &__form-control{
         border: 1px solid #ccc;
         padding: 10px;
         display: inline-block;
         margin-bottom: 4px;
         width: 100%; 
     }
-    &__form--name{
+    &__form-name{
         margin-right: 8px;
     }
     &__btn{
         margin-top: 10px;
         float: right;
     }
-    &__btn--submit{
+    &__btn-submit{
         background-color: #000;
         color: #fff;
         border: 0;

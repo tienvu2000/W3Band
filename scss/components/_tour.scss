@@ -10,13 +10,13 @@
        border-bottom: 1px solid #ccc;
        padding: 8px 16px;
    }
-   &__date--tksoldout{
+   &__date-tksoldout{
        background-color: #F44336;
        color: #fff;
        padding: 3px 7px;
        margin-left: 16px;
    }
-   &__date--tkstill{
+   &__date-tkstill{
     padding: 0px 8px;
     background: #000;
     color: #fff;
@@ -29,35 +29,35 @@
        flex-wrap: wrap;
        justify-content: space-between;
     }
-    &__shows--item{
+    &__shows-item{
         width: 32%;
         background:#fff;
         color: #000;
    }
-   &__shows--img{
+   &__shows-img{
        width: 100%;
        height: auto;
        &:hover{
             opacity: 0.6;
        }
     }
-    &__shows--content{
+    &__shows-content{
         padding:8px 16px;
         margin-bottom: 7px;
     }
-    &__shows--title{
+    &__shows-title{
         padding-bottom: 15px;
         font-size: 15px;
         font-weight: bold;
     }
-    &__shows--dates{
+    &__shows-dates{
         opacity: 0.8;
         padding-bottom: 15px;
     }
-    &__shows--subtitle{
+    &__shows-subtitle{
         margin-bottom:  15px;
     }
-    &__shows--btn{
+    &__shows-btn{
         padding: 11px 16px;
         background-color: #000;
         color: #fff;

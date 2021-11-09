@@ -54,7 +54,7 @@
     .tour__shows{
         flex-direction: column;
     }
-    .tour__shows--item{
+    .tour__shows-item{
         width: 100%;
         margin-bottom: 16px;
     }

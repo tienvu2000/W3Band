@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./css/responsive.css">
     <title> The band </title>
 </head>
 <body>
     <header id="header" class="header">
         <div class="header__menu">
-            <!-- Begin nav -->
+            <!-- <!- Begin nav -> -->
             <ul id="nav" class="header__nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -32,31 +37,55 @@
                     </ul>
                 </li>
             </ul>
-            <!-- begin Search -->
-            <div class="header__search--btn">
+            <!-- <!- begin Search -> -->
+            <div class="header__search-btn">
                 <a href="#" class="ti-search"></a>       
             </div>
-            <!-- end Search -->
-            <!-- begin btn-more-menu -->
-            <div id="mobile__more--btn" class="header__more--btn">
+            <!-- <!- end Search -> -->
+            <!-- <!- begin btn-more-menu -> -->
+            <div id="mobile__more-btn" class="header__more-btn">
                 <i class="ti-menu"></i>
             </div>
-            <!-- end btn-more -->
+            <!-- <!- end btn-more -> -->
         </div>
-            <!-- end nav -->
-
+            <!-- <!- end nav -> -->
+            <!-- begin search form -->
+            <div class="header__search-form">
+                <input type="text" placeholder="Search ...">
+            </div>
+            <!-- end search form -->
     </header>
     <div id="main">
-        <!-- begin slider -->
+        <!-- <!- begin slider -> -->
         <div class="slider">
-            <div class="slider__img">
-                <img src="./assets/img/imgslide.jpg" alt="" class="slider__img--los">
+            <div class="slider__la slider__item">
+                <div class="slider__img">
+                    <img src="./assets/img/imgslide.jpg" alt="Los Angeles" class="slider__img-los">
+                </div>
+                <div class="slider__content">
+                    <h3 class="slider__maintext">Los Angeles</h3>
+                    <p class="slider__subtext">We had the best time playing at Venice Beach!</p>
+                </div>
             </div>
-            <div class="slider__content">
-                <h3 class="slider__maintext">Los Angeles</h3>
-                <p class="slider__subtext">We had the best time playing at Venice Beach!</p>
+            <div class="slider__ny slider__item">
+                <div class="slider__img">
+                    <img src="./assets/img/ny.jpg" alt="new york" class="slider__img-los">
+                </div>
+                <div class="slider__content">
+                    <h3 class="slider__maintext">New York</h3>
+                    <p class="slider__subtext">Thank you, New York - A night we won't forget.</p>
+                </div>
             </div>
-        <!-- end slider -->
+            <div class="slider__chicago slider__item">
+                <div class="slider__img">
+                    <img src="./assets/img/chicago.jpg" alt="chicago" class="slider__img-los">
+                </div>
+                <div class="slider__content">
+                    <h3 class="slider__maintext">Chicago</h3>
+                    <p class="slider__subtext">Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+        <!-- <!- end slider -> -->
         </div>
         <div id="band" class="band">
             <div class="container">
@@ -67,22 +96,22 @@
                         We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div class="band__member">
-                        <div class="band__member--item">
-                            <p class="band__member--name">Name</p>
-                            <div class="band__member--pic">
-                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                        <div class="band__member-item">
+                            <p class="band__member-name">Name</p>
+                            <div class="band__member-pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member-img">
                             </div>
                         </div>
-                        <div class="band__member--item">
-                            <p class="band__member--name">Name</p>
-                            <div class="band__member--pic">
-                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                        <div class="band__member-item">
+                            <p class="band__member-name">Name</p>
+                            <div class="band__member-pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member-img">
                             </div>
                         </div>
-                        <div class="band__member--item">
-                            <p class="band__member--name">Name</p>
-                            <div class="band__member--pic">
-                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member--img">
+                        <div class="band__member-item">
+                            <p class="band__member-name">Name</p>
+                            <div class="band__member-pic">
+                                <img src="./assets/img/bandmember.jpg" alt="" class="band__member-img">
                             </div>
                         </div>
                     </div>
@@ -90,7 +119,7 @@
             </div>
         </div>
         <div  id="tour" class="tour">
-            <!-- begin tour -->
+            <!-- <!- begin tour -> -->
             <div class="container">
                 <div class="content">
                     <h2 class="title">TOUR DATES
@@ -101,65 +130,65 @@
                 </div>
                 <div class="tour__date">
                     <div class="tour__dates">
-                        <div class="tour__dates--month">September <span class="tour__date--tksoldout">Sold out</span>
+                        <div class="tour__dates-month">September <span class="tour__date-tksoldout">Sold out</span>
                         </div>
                     </div>
                     <div class="tour__dates">
-                        <div class="tour__dates--month">October  <span class="tour__date--tksoldout">Sold out</span>
+                        <div class="tour__dates-month">October  <span class="tour__date-tksoldout">Sold out</span>
                         </div>
                     </div>
                     <div class="tour__dates">
-                        <div class="tour__dates--month">November <span class="tour__date--tkstill">3</span>
+                        <div class="tour__dates-month">November <span class="tour__date-tkstill">3</span>
                         </div>  
                     </div>
                 </div>
                 <div class="tour__shows">
-                    <div class="tour__shows--item">
+                    <div class="tour__shows-item">
                         <div>
-                            <img src="./assets/img/newyork.jpg" alt="" class="tour__shows--img">
+                            <img src="./assets/img/newyork.jpg" alt="" class="tour__shows-img">
                         </div>
-                        <div class="tour__shows--content">
-                            <h4 class="tour__shows--title">New York
+                        <div class="tour__shows-content">
+                            <h4 class="tour__shows-title">New York
                             </h4>
-                            <p class="tour__shows--dates">
+                            <p class="tour__shows-dates">
                                 Fri 27 Nov 2016
                             </p>
-                            <div class="tour__shows--subtitle">
+                            <div class="tour__shows-subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
+                            <button class="tour__shows-btn js__buy-tickets">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour__shows--item">
+                    <div class="tour__shows-item">
                         <div>
-                            <img src="./assets/img/paris.jpg" alt="" class="tour__shows--img">
+                            <img src="./assets/img/paris.jpg" alt="" class="tour__shows-img">
                         </div>
-                        <div class="tour__shows--content">
-                            <h4 class="tour__shows--title">Paris
+                        <div class="tour__shows-content">
+                            <h4 class="tour__shows-title">Paris
                             </h4>
-                            <p class="tour__shows--dates">
+                            <p class="tour__shows-dates">
                                 Sat 28 Nov 2016
                             </p>
-                            <div class="tour__shows--subtitle">
+                            <div class="tour__shows-subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
+                            <button class="tour__shows-btn js__buy-tickets">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="tour__shows--item">
+                    <div class="tour__shows-item">
                         <div>
-                            <img src="./assets/img/sanfran.jpg" alt="" class="tour__shows--img">
+                            <img src="./assets/img/sanfran.jpg" alt="" class="tour__shows-img">
                         </div>
-                        <div class="tour__shows--content">
-                            <h4 class="tour__shows--title">San Francisco
+                        <div class="tour__shows-content">
+                            <h4 class="tour__shows-title">San Francisco
                             </h4>
-                            <p class="tour__shows--dates">
+                            <p class="tour__shows-dates">
                                 Sun 29 Nov 2016
                             </p>
-                            <div class="tour__shows--subtitle">
+                            <div class="tour__shows-subtitle">
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </div>
-                            <button class="tour__shows--btn js__buy--tickets">Buy Tickets</button>
+                            <button class="tour__shows-btn js__buy-tickets">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -181,26 +210,26 @@
                             <i class="ti-location-pin"></i>
                             Ứng Hòa, Hà Nội
                         </div>
-                        <div class="contact__phone--number">
+                        <div class="contact__phone-number">
                             <i class="ti-mobile"></i>
                             Phone : 096 174 3857
                         </div>
-                        <div class="contact__email--address">
+                        <div class="contact__email-address">
                             <i class="ti-email"></i>
                             Email : tienxmin0123@gmail.com
                         </div>
                     </div>
                     <form action="">
                         <div class="contact__form">
-                            <div class="contact__form--group">
-                                <input type="text" name="" id="" placeholder="Name" required class="contact__form--control contact__form--name">
-                                <input type="email" name="" id="" placeholder="Email" required  class="contact__form--control">     
+                            <div class="contact__form-group">
+                                <input type="text" name="" id="" placeholder="Name" required class="contact__form-control contact__form-name">
+                                <input type="email" name="" id="" placeholder="Email" required  class="contact__form-control">     
                             </div>
-                            <div class="contact__form--mess">
-                                <input type="text" name="" id="" placeholder="Message" required  class="contact__form--control">
+                            <div class="contact__form-mess">
+                                <input type="text" name="" id="" placeholder="Message" required  class="contact__form-control">
                             </div>
                             <div class="contact__btn">
-                                <input type="submit" value="Send" class="contact__btn--submit">
+                                <input type="submit" value="Send" class="contact__btn-submit">
                             </div>
                         </div>
                     </form>
@@ -228,7 +257,7 @@
     <div class="modal js__modal">
         <div class="modal__container js__modal__container">
             <header class="modal__header">
-                <h1 class="modal__header--title">
+                <h1 class="modal__header-title">
                     <i class="ti-bag"></i>
                     Tickets
                 </h1>
@@ -239,19 +268,19 @@
             <body>
                 <div class="modal__body">
                     <form action="#">
-                        <div class="modal__quantity--tickets">
-                            <label for="quantity--tickets" class="modal__form--quantity" >
+                        <div class="modal__quantity-tickets">
+                            <label for="quantity-tickets" class="modal__form-quantity" >
                                 <i class="ti-shopping-cart"></i>
                                 Tickets, $15 per person
                             </label>
-                            <input  id="quantity--tickets" type="text" class="modal__form--input" required placeholder="How many?">
+                            <input  id="quantity-tickets" type="text" class="modal__form-input" required placeholder="How many?">
                         </div>
-                        <div class="modal__email--address">
-                            <label for="email" class="modal__form--email">
+                        <div class="modal__email-address">
+                            <label for="email" class="modal__form-email">
                                 <i class="ti-user"></i>
                                 Send To
                             </label>
-                            <input id="email" type="text" class="modal__form--input" required placeholder="Enter email">
+                            <input id="email" type="text" class="modal__form-input" required placeholder="Enter email">
                         </div>
                         <button class="modal__btn" >
                             Pay
@@ -260,69 +289,32 @@
                     </form>
                 </div>
             </body>
-            <footer class="modal--foter">
+            <footer class="modal-foter">
 
                 <div class="modal__help">
-                    <p class="modal__need--help"></p>
+                    <p class="modal__need-help"></p>
                     Need
-                        <a href="" class="modal__help--user">
+                        <a href="" class="modal__help-user">
                             helps?
                         </a>
                 </div>
             </footer>
         </div>
     </div>
-    <script>
-        // open/close menu
-        var header = document.getElementById('header');
-        var mobileBtn = document.getElementById('mobile__more--btn');
-        var headerHeight = header.clientHeight;
-        mobileBtn.onclick = function(){
-            var isClose = header.clientHeight === headerHeight;
-            if (isClose) {
-                header.style.height = 'auto';
-            }
-            else {
-                header.style.height = null;
-            }
-        }
-        // auto close menu is onclick
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for ( var i = 0; i<menuItems.length; i++){
-            var menuItem = menuItems[i];
-            menuItem.onclick = function(){
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header__subnav');
-                if(!isParentMenu){
-                    header.style.height = null;
-                }
-            }
-        }
-    </script>
-    <script>
-        const buyBtns = document.querySelectorAll('.js__buy--tickets');
-        const modal = document.querySelector('.js__modal')
-        const modalClose = document.querySelector('.js__modal__close')
-        const modalContainer = document.querySelector('.js__modal__container')
-        // add class open
-        function showBuyTickets(){
-            modal.classList.add('modal__open')
-        }
-        // remove class open
-        function hideBuyTickets(){
-            modal.classList.remove('modal__open')
-        }
-        // lặp từng thẻ button và lắng nghe hành vi click
-        for (const buyBtn of buyBtns){
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-        // nghe hành vi click vào button close
-        modalClose.addEventListener('click', hideBuyTickets)
-        // click ra ngoài vẫn thực hiện hành vi đóng buy tickets
-        modal.addEventListener('click', hideBuyTickets)
-        modalContainer.addEventListener('click' , function (event){
-        event.stopPropagation()
-        })
-    </script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slicks.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
 

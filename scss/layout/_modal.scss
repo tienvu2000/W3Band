@@ -51,15 +51,15 @@
     &__body{
         padding: 32px 16px;
     }
-    &__quantity--tickets,&__email--address{
+    &__quantity-tickets,&__email-address{
         display: flex;
         flex-direction: column;
         margin-bottom: 24px;
     }
-    &__form--quantity,&__form--email{
+    &__form-quantity,&__form-email{
         margin-bottom: 8px;
     }
-    &__form--input{
+    &__form-input{
         padding: 15px;
     }
     &__btn{
@@ -83,7 +83,7 @@
         float:right;
         padding: 16px;   
     }
-    &__help--user{
+    &__help-user{
         text-decoration: underline;
         color: #2196F3;
     }
